@@ -1,0 +1,281 @@
+二十三种设计模式
+================
+
+设计模式是软件开发中常见问题的典型解决方案。它们是经过反复测试的代码设计,可以用来解决特定的设计问题,使代码更具可重用性、灵活性和可维护性。
+
+
+23种经典设计模式的思维导图
+------------------------------------------
+
+.. mermaid::
+
+   graph LR
+       A[设计模式] --> B[创建型模式]
+       A --> C[结构型模式]
+       A --> D[行为型模式]
+       B --> B1[单例模式]
+       B --> B2[工厂方法模式]
+       B --> B3[抽象工厂模式]
+       B --> B4[建造者模式]
+       B --> B5[原型模式]
+       C --> C1[适配器模式]
+       C --> C2[桥接模式]
+       C --> C3[组合模式]
+       C --> C4[装饰模式]
+       C --> C5[外观模式]
+       C --> C6[享元模式]
+       C --> C7[代理模式]
+       D --> D1[责任链模式]
+       D --> D2[命令模式]
+       D --> D3[解释器模式]
+       D --> D4[迭代器模式]
+       D --> D5[中介者模式]
+       D --> D6[备忘录模式]
+       D --> D7[观察者模式]
+       D --> D8[状态模式]
+       D --> D9[策略模式]
+       D --> D10[模板方法模式]
+       D --> D11[访问者模式]
+
+设计模式综合分析
+---------------------
+
+1. 创建型模式
+^^^^^^^^^^^^^^^^^^
+
+创建型模式关注对象的创建过程。
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 40 40
+
+   * - 模式名称
+     - 描述
+     - 应用场景
+   * - 单例模式
+     - 确保一个类只有一个实例,并提供一个全局访问点
+     - 需要全局唯一对象;资源共享
+   * - 工厂方法模式
+     - 定义一个用于创建对象的接口,让子类决定实例化哪一个类
+     - 不确定要创建的对象类型;子类指定创建的对象
+   * - 抽象工厂模式
+     - 提供一个创建一系列相关或相互依赖对象的接口
+     - 系统需要独立于产品创建;系统由多个产品系列配置
+   * - 建造者模式
+     - 将复杂对象的构建与表示分离
+     - 创建复杂对象;允许对象有不同表示
+   * - 原型模式
+     - 用原型实例指定创建对象的种类,并通过拷贝这些原型创建新对象
+     - 需要避免创建一个与某对象类似的新对象时的耗时操作
+
+2. 结构型模式
+^^^^^^^^^^^^^
+
+结构型模式关注类和对象的组合。
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 40 40
+
+   * - 模式名称
+     - 描述
+     - 应用场景
+   * - 适配器模式
+     - 将一个类的接口转换成客户希望的另外一个接口
+     - 使用一个已经存在的类,但其接口不符合需求
+   * - 桥接模式
+     - 将抽象部分与实现部分分离,使它们都可以独立的变化
+     - 需要在抽象和实现之间更好的解耦
+   * - 组合模式
+     - 将对象组合成树形结构以表示"部分-整体"的层次结构
+     - 客户统一处理单个对象和组合对象
+   * - 装饰模式
+     - 动态地给一个对象添加一些额外的职责
+     - 需要透明且动态地扩展对象功能
+   * - 外观模式
+     - 为子系统中的一组接口提供一个一致的界面
+     - 简化复杂子系统的调用;提供高层接口
+   * - 享元模式
+     - 运用共享技术有效地支持大量细粒度的对象
+     - 系统有大量相似对象,造成很大的内存开销
+   * - 代理模式
+     - 为其他对象提供一种代理以控制对这个对象的访问
+     - 需要控制对象的访问权限;延迟加载
+
+3. 行为型模式
+^^^^^^^^^^^^^
+
+行为型模式关注对象之间的通信。
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 40 40
+
+   * - 模式名称
+     - 描述
+     - 应用场景
+   * - 责任链模式
+     - 为解除请求的发送者和接收者之间耦合,而使多个对象都有机会处理这个请求
+     - 有多个对象可以处理同一个请求,具体由哪个对象处理由运行时刻自动确定
+   * - 命令模式
+     - 将一个请求封装为一个对象,从而使你可用不同的请求对客户进行参数化
+     - 需要将请求调用者和请求接收者解耦
+   * - 解释器模式
+     - 给定一个语言,定义它的文法的一种表示,并定义一个解释器
+     - 需要解释一些特定格式的语言
+   * - 迭代器模式
+     - 提供一种方法顺序访问一个聚合对象中各个元素,而又不需暴露该对象的内部表示
+     - 需要访问一个聚合对象,而不需要暴露其内部结构
+   * - 中介者模式
+     - 用一个中介对象来封装一系列的对象交互
+     - 对象之间存在复杂的交互关系,需要解耦
+   * - 备忘录模式
+     - 在不破坏封装性的前提下,捕获一个对象的内部状态,并在该对象之外保存这个状态
+     - 需要保存和恢复数据的相关状态场景
+   * - 观察者模式
+     - 定义对象间的一种一对多的依赖关系,当一个对象的状态发生改变时,所有依赖于它的对象都得到通知并被自动更新
+     - 当一个对象状态改变需要同时改变其他对象,或实现表示层和数据逻辑层的分离
+   * - 状态模式
+     - 允许一个对象在其内部状态改变时改变它的行为
+     - 一个对象的行为取决于它的状态,并且它必须在运行时刻根据状态改变它的行为
+   * - 策略模式
+     - 定义一系列的算法,把它们一个个封装起来,并且使它们可相互替换
+     - 需要动态地在几种算法中选择一种
+   * - 模板方法模式
+     - 定义一个操作中的算法的骨架,而将一些步骤延迟到子类中
+     - 有一些通用的方法,同时有一些特定的子类实现
+   * - 访问者模式
+     - 表示一个作用于某对象结构中的各元素的操作,它使你可以在不改变各元素的类的前提下定义作用于这些元素的新操作
+     - 需要对一个对象结构中的对象进行很多不同的并且不相关的操作
+
+各个模式代码详解
+---------------------
+
+1. 观察者模式
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+观察者模式是一种行为设计模式,它定义了一种一对多的依赖关系,让多个观察者对象同时监听某一个主题对象。这个主题对象在状态发生变化时,会通知所有观察者对象,使它们能够自动更新自己。
+
+**对象图:**
+
+.. mermaid::
+
+   classDiagram
+      Subject <|-- ConcreteSubject
+      Observer <|-- ConcreteObserver
+      Subject --> Observer
+      ConcreteSubject --> ConcreteObserver
+      
+      class Subject {
+          <<abstract>>
+          +attach(Observer)
+          +detach(Observer)
+          +notify()
+      }
+      class Observer {
+          <<abstract>>
+          +update()
+      }
+      class ConcreteSubject {
+          -observers: List
+          -state
+          +getState()
+          +setState()
+      }
+      class ConcreteObserver {
+          -subject: Subject
+          -observerState
+          +update()
+      }
+
+**应用场景:**
+
+1. 当一个对象的改变需要同时改变其他对象,而且它不知道具体有多少对象需要改变时。
+2. 当一个抽象模型有两个方面,其中一个方面依赖于另一个方面。将这两者封装在独立的对象中使它们可以各自独立地改变和复用。
+3. 实现事件处理系统。
+4. 实现订阅-发布机制。
+
+**代码示例:**
+
+以下是一个简单的C++实现示例:
+
+.. code-block:: cpp
+
+   #include <iostream>
+   #include <vector>
+   #include <algorithm>
+
+   class Observer {
+   public:
+       virtual void update(const std::string &message_from_subject) = 0;
+   };
+
+   class Subject {
+   public:
+       virtual void attach(Observer *observer) = 0;
+       virtual void detach(Observer *observer) = 0;
+       virtual void notify() = 0;
+   };
+
+   class ConcreteSubject : public Subject {
+   private:
+       std::vector<Observer *> observers;
+       std::string message;
+   public:
+       void attach(Observer *observer) override {
+           observers.push_back(observer);
+       }
+
+       void detach(Observer *observer) override {
+           observers.erase(std::remove(observers.begin(), observers.end(), observer), observers.end());
+       }
+
+       void notify() override {
+           for (Observer *observer : observers) {
+               observer->update(message);
+           }
+       }
+
+       void createMessage(std::string message = "Empty") {
+           this->message = message;
+           notify();
+       }
+   };
+
+   class ConcreteObserver : public Observer {
+   private:
+       std::string message_from_subject;
+       ConcreteSubject &subject;
+       static int static_number;
+       int number;
+
+   public:
+       ConcreteObserver(ConcreteSubject &subject) : subject(subject) {
+           this->subject.attach(this);
+           number = ++static_number;
+       }
+
+       void update(const std::string &message_from_subject) override {
+           this->message_from_subject = message_from_subject;
+           printInfo();
+       }
+
+       void printInfo() {
+           std::cout << "Observer " << number << ": 新消息 = " << message_from_subject << std::endl;
+       }
+   };
+
+   int ConcreteObserver::static_number = 0;
+
+   int main() {
+       ConcreteSubject subject;
+       ConcreteObserver observer1(subject);
+       ConcreteObserver observer2(subject);
+
+       subject.createMessage("你好世界! :D");
+       subject.createMessage("再见世界! :/");
+
+       return 0;
+   }
+
+在这个例子中,我们有一个`Subject`(主题)和多个`Observer`(观察者)。当`Subject`的状态改变时(在这里是创建新消息),它会通知所有注册的`Observer`,然后`Observer`会更新自己的状态。这种模式允许对象之间的松耦合:主题不需要知道具体的观察者,而观察者可以自由地订阅或取消订阅主题。

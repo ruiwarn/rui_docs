@@ -1,0 +1,14 @@
+.wy-nav-content {
+    max-width: 80%;
+}
+
+@media screen and (min-width: 1000px) {
+    .wy-nav-content-wrap {
+        background: #fcfcfc;
+    }
+
+    .wy-nav-content {
+        margin: 0;
+        background: #fcfcfc;
+    }
+}

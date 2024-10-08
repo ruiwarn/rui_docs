@@ -1,0 +1,17 @@
+settings
+build
+*.dep
+*.SchDocPreview
+backup*
+Debug
+Release
+*.uvguix*
+*.ctu-info
+cppcheck*
+*.out
+nul
+c_cpp_properties.json
+.idea/
+~$*
+.cache/
+*.so
