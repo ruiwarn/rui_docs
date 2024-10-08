@@ -1,0 +1,11 @@
+# readthedocs 需要用到的主题依赖
+sphinx_rtd_theme
+ 
+# python项目中要用到的依赖
+pathlib
+sparc_me
+numpy
+pandas
+sphinxcontrib-mermaid
+recommonmark
+sphinx_markdown_tables
