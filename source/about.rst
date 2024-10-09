@@ -2,12 +2,6 @@
 关于
 ====================
 
-.. raw:: html
-
-   <div class="header-decoration">
-     <img src="https://img.icons8.com/color/96/000000/circuit.png" alt="智能断路器图标" style="width: 60px; height: 60px;">
-   </div>
-
 .. note::
    本文档旨在为嵌入式系统开发者提供全面而实用的技术指南和最佳实践,助力您在嵌入式领域的技术提升和创新。
 
