@@ -3,13 +3,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-软件编程技巧
+内核介绍
 ==================================================
 
+.. image:: ../images/kernel.png
+    :alt: 内核架构
+
+=================================================
+
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
 
-   COW思想
-   圈复杂度优化方式
+   RTOS抽象
+   littlefs文件系统
+   CEvent模块化框架
+   bareSystemMCU驱动抽象框架
+   UMM_MALLOC通用动态内存管理
+
 

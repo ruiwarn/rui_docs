@@ -3,13 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-软件编程技巧
+业务知识
 ==================================================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
 
-   COW思想
-   圈复杂度优化方式
+   行业概述.md
+   产品线介绍.md
+   业务流程.md
+   客户画像.md
 

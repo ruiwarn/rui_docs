@@ -1,4 +1,4 @@
-.. 嵌入式知识库文档集 documentation master file, created by
+.. 智能断路器产品线文档集 documentation master file, created by
    sphinx-quickstart on Sat Oct  5 14:12:53 2024.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -12,7 +12,7 @@
 
 .. raw:: html
 
-   <h1 style="text-align: center; font-size: 3em; color: #4a4a4a;">嵌入式知识库文档集</h1>
+   <h1 style="text-align: center; font-size: 3em; color: #4a4a4a;">智能断路器产品线文档集</h1>
 
 .. raw:: html
 
@@ -44,7 +44,7 @@
 欢迎阅读
 ==================================================
 
-本文档集包含了嵌入式知识库的全面信息，涵盖了从开发环境搭建到软件架构、工程开发等各个方面。
+本文档集包含了智能断路器产品线的全面信息，涵盖了从开发环境搭建到软件架构、工程开发等各个方面。
 
 .. note::
 
@@ -54,12 +54,13 @@
    :maxdepth: 1
    :caption: 目录:
 
-   开源环境搭建/index
+   智能断路器簇/index
+   开发环境搭建/index
    软件架构知识/index
-   最佳架构构建/index
-   软件工程流程/index
+   公司平台构建/index
+   软件工程开发/index
+   代码风格规范/index
    软件编程技巧/index
-   软件框架教程/index
    AI技巧总结/index
    about
 

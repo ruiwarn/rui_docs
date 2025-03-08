@@ -3,13 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-软件编程技巧
+流程与工具
 ==================================================
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Contents:
+   :maxdepth: 2
 
-   COW思想
-   圈复杂度优化方式
+   钉钉合并请求推送
+   钉钉一周代码统计与鼓励推送
+   git flow协作开发流程
+
+
+   
 

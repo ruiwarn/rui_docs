@@ -3,13 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-软件编程技巧
+概要设计
 ==================================================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
 
-   COW思想
-   圈复杂度优化方式
+   概要设计
+
+   
 

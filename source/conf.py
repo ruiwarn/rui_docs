@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = '嵌入式知识库文档集'
+project = '智能断路器产品线文档集'
 copyright = '2024, 王瑞'
 author = '王瑞'
 release = 'v1.0.0'
